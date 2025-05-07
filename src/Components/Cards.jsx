@@ -6,16 +6,20 @@ function Cards({ items }) {
           key={product.id}
           className=" rounded-2xl overflow-hidden duration-300 backdrop-blur-sm border border-white/30"
         >
+          {/* Card */}
           <img
             src={product.image}
             alt={product.title}
             className="object-cover transition-transform duration-300 rounded-2xl hover:scale-105 "
           />
-          <div className="p-4 text-stone-300 bg-slate-900 bg-opacity-50 rounded-b-2xl ">
+          {/* Image Card */}
+          <div className="p-4 text-stone-300 bg-opacity-40 rounded-b-2xl backdrop-blur-sm">
+            {/* Text Card */}
             <h2
               className="text-lg font-semibold flex items-center justify-center object-cover 
             transition-transform hover:text-sky-300"
             >
+              {/* text */}
               {product.title}
             </h2>
           </div>
